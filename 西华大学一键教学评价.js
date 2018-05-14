@@ -18,8 +18,8 @@
         //若临时变量courseCode等于当前页的课程代码newCourseCode，说明已经评价过了
         if (newCourseCode == courseCode) {
             clearInterval(timer);//关闭timer
-            frame.getElementById('Button2').click();//点击提交按钮(少了这一句怎么能叫一键)
-            /*console.log('评价完成！');//控制台输出完成信息（教务系统会直接alert("评价完成")的，这句可以去掉）*/
+            frame.getElementById('Button2').click();//点击提交按钮
+            /*console.log('评价完成！');//控制台输出完成信息*/
             return true;
         }else{
              courseCode = newCourseCode;//当前页课程代码存入临时变量
